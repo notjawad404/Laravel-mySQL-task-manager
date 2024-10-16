@@ -92,9 +92,14 @@
         .delete:hover{
             background-color: darkred;
         }
+
+        .category{
+            width:200px;
+        }
     </style>
 </head>
 <body>
+<a href="/categories"><button class="category">Manage categories</button></a>
     <h1>Task Management</h1>
 
     <!-- Task Form -->

@@ -29,4 +29,8 @@ Route::post('/tasks/{task}', [TaskController::class, 'update'])->name('tasks.upd
 Route::delete('/tasks/{task}', [TaskController::class, 'delete'])->name('tasks.delete');
 
 // Routes for Categories
-//use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\CategoryController;
+
+Route::get('/categories', [CategoryController::class, 'index'])->name('categories.index');
+Route::post('/categories', [CategoryController::class, 'save'])->name('categories.save');
+Route::delete('/categories/{category}', [CategoryController::class, 'delete'])->name('categories.delete');
